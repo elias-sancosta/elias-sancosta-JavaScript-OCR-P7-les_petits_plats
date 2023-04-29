@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1024px) {
+  section.tags,
+  section.filter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .card {
+    min-width: auto;
+  }
+}
