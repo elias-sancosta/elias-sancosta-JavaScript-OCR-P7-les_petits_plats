@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="Recherchez et consultez toutes vos meilleure recette de cuisine en un click ">
+  <meta name="keywords" content="recette, cuisine, petits plats, plats, food, chef, rapide">
+  <meta name="author" content="Les petits plats">
+
+  <link rel="icon" type="image/svg+xml" href="ressources/images/icone.svg" />
+  <link rel="stylesheet" href="main.css">
+
+  <script type="module" src="scripts/app.js" defer></script>
+
+  <title>Les petits plats – Recherche</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Logo -->
+    <header class="header">
+      <a class="header__logolink" href="index.html">
+        <img class="header__logoimg" src="ressources/images/logo.svg" alt="logo les petits plats">
+      </a>
+    </header>
+
+    <!-- Barre de recherche -->
+    <section class="searchbar">
+      <div class="search__inputwrapper">
+        <input type="text" class="search__input" placeholder="Rechercher une recette">
+        <button class="search__button">
+          <img class="search__loupe" src="ressources/images/loupe.svg" alt="rechercher loupe button">
+        </button>
+      </div>
+    </section>
+
+    <!-- Affichage des tags -->
+    <section class="tags"></section>
+
+    <!-- Système de filtrage par tags -->
+    <section class="filter">
+      <!-- Filtrage des ingrédients -->
+      <div class="filter__selector filter__selector--blue">
+        <input class="filter__input filter_input--blue" type="button" data-color="blue" data-value="Ingrédients"
+          value="Ingrédients" placeholder="Recherche un ingrédients">
+        <div class="filter__arrow"></div>
+        <ul class="filter__showList filter__showList--blue"></ul>
+      </div>
+
+      <!-- Filtrage des appareils -->
+      <div class="filter__selector filter__selector--green">
+        <input class="filter__input filter_input--green" type="button" data-color="blue" data-value="Appareil"
+          value="Appareil" placeholder="Recherche un appareil">
+        <div class="filter__arrow"></div>
+        <ul class="filter__showList filter__showList--green"></ul>
+      </div>
+
+      <!-- Filtrage des ustensiles -->
+      <div class="filter__selector filter__selector--red">
+        <input class="filter__input filter_input--red" type="button" data-color="blue" data-value="Ustensiles"
+          value="Ustensiles" placeholder="Recherche un ustensile">
+        <div class="filter__arrow"></div>
+        <ul class="filter__showList filter__showList--red"></ul>
+      </div>
+    </section>
+
+    <!-- Message à afficher lorsqu'aucune recette n'a été trouvée -->
+    <div class="cards__no-recipes">
+      <p class="cards__no-recipes--text">
+        Aucune recette ne correspond à votre critère de recherche…
+      </p>
+    </div>
+
+    <!-- Lister toutes les recettes -->
+    <section class="cards__container"></section>
+
+  </div>
+</body>
+
+</html>
