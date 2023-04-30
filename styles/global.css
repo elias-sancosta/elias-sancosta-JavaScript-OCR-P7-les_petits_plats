@@ -41,7 +41,11 @@ section.searchbar {
   border: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: clamp(var(--text-base), var(--text-base) + 1vw, var(--text-2xl));
+  font-size: clamp(
+    var(--text-base),
+    calc(var(--text-base) + 1vw),
+    var(--text-2xl)
+  );
   font-weight: 500;
   border-radius: 0.5rem;
 }
