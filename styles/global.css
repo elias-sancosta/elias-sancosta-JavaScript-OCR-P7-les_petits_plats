@@ -43,7 +43,7 @@ section.searchbar {
   white-space: nowrap;
   font-size: clamp(
     var(--text-base),
-    calc(var(--text-base) + 1vw),
+    calc(var(--text-base)+1vw),
     var(--text-2xl)
   );
   font-weight: 500;
